@@ -1,0 +1,8 @@
+elements:
+  - name: Image Animated
+    type: image
+    parameters:
+      pos_x: 860
+      pos_y: 400
+      filename: ../data/counter_anim/*.png
+      fps: 25
