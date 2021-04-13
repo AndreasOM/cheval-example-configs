@@ -1,0 +1,80 @@
+default_page: 0
+elements:
+  - name: Main Stripe Top
+    type: block
+    parameters:
+      pos_x: 0
+      pos_y: 200
+      width: 1980
+      height: 100
+      color: 0xff808080
+  - name: Main Page Top Text
+    type: text
+    parameters:
+      pos_x: 20
+      pos_y: 200
+      width: 1980
+      height: 100
+      size: 80
+      bounding_box_pos_x: 20
+      bounding_box_pos_y: 200
+      bounding_box_width: 1980
+      text: "\"Change Page with Cursor Left + Right\""
+      font: ../data/fonts/FiraCode-Medium.ttf
+      color: "0xffffffff"
+  - name: Image 1
+    type: image
+    parameters:
+      pos_x: "1920-256-10"
+      pos_y: "100+15+30.0*sin(2.0*$time)"
+      filename: ../data/images/01.png
+pages:
+  - name: Page 0
+    elements:
+    - name: Page 0 Stripe
+      type: block
+      parameters:
+        pos_x: 0
+        pos_y: 490
+        width: 1980
+        height: 100
+        color: 0xff202080
+    - name: Page 0 Text
+      type: text
+      parameters:
+        pos_x: 20
+        pos_y: 490
+        width: 1980
+        height: 100
+        size: 80
+        bounding_box_pos_x: 20
+        bounding_box_pos_y: 490
+        bounding_box_width: 1980
+        text: "\"Page 0\""
+        font: ../data/fonts/FiraCode-Medium.ttf
+        color: "0xffffffff"
+
+  - name: Page 1
+    elements:
+    - name: Page 1 Stripe
+      type: block
+      parameters:
+        pos_x: 0
+        pos_y: 490
+        width: 1980
+        height: 100
+        color: 0xff208000
+    - name: Page 1 Text
+      type: text
+      parameters:
+        pos_x: 20
+        pos_y: 490
+        width: 1980
+        height: 100
+        size: 80
+        bounding_box_pos_x: 20
+        bounding_box_pos_y: 490
+        bounding_box_width: 1980
+        text: "\"Page 1\""
+        font: ../data/fonts/FiraCode-Medium.ttf
+        color: "0xffffffff"
