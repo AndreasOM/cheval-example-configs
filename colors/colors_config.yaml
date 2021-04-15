@@ -1,0 +1,136 @@
+variable_defaults:
+  block_size: 128
+  padding: 16
+
+elements:
+  - name: Gray Stripe
+    type: block
+    parameters:
+      pos_x: "0"
+      pos_y: "0 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      width: "1920"
+      height: "$block_size"
+      color: "gray"
+
+  - name: Gray Stripe
+    type: block
+    parameters:
+      pos_x: "0"
+      pos_y: "2 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      width: "1920"
+      height: "$block_size"
+      color: "gray"
+
+  - name: White Block
+    type: block
+    parameters:
+      pos_x: "0 * ($block_size+$padding) + $padding"
+      pos_y: "0 * ($block_size+$padding) + $padding"
+      width: "$block_size"
+      height: "$block_size"
+      color: "0xffffffff"
+
+  - name: Red Block
+    type: block
+    parameters:
+      pos_x: "1 * ($block_size+$padding) + $padding"
+      pos_y: "0 * ($block_size+$padding) + $padding"
+      width: "$block_size"
+      height: "$block_size"
+      color: "#ff000080"
+
+  - name: Green Block
+    type: block
+    parameters:
+      pos_x: "2 * ($block_size+$padding) + $padding"
+      pos_y: "0 * ($block_size+$padding) + $padding"
+      width: "$block_size"
+      height: "$block_size"
+      color: "rgb(0, 255, 0)"
+
+  - name: Pastel Green Block
+    type: block
+    parameters:
+      pos_x: "3 * ($block_size+$padding) + $padding"
+      pos_y: "0 * ($block_size+$padding) + $padding"
+      width: "$block_size"
+      height: "$block_size"
+      color: "hsl(120, 60%, 70%)"
+
+
+  - name: Teal Block
+    type: block
+    parameters:
+      pos_x: "1 * ($block_size+$padding) + $padding"
+      pos_y: "1 * ($block_size+$padding) + $padding"
+      width: "$block_size"
+      height: "$block_size"
+      color: "teal"
+
+  - name: Thistle Block
+    type: block
+    parameters:
+      pos_x: "2 * ($block_size+$padding) + $padding"
+      pos_y: "1 * ($block_size+$padding) + $padding"
+      width: "$block_size"
+      height: "$block_size"
+      color: "thistle"
+
+  - name: Indigo Block
+    type: block
+    parameters:
+      pos_x: "3 * ($block_size+$padding) + $padding"
+      pos_y: "1 * ($block_size+$padding) + $padding"
+      width: "$block_size"
+      height: "$block_size"
+      color: "indigo"
+
+  - name: Goldenrod Block
+    type: block
+    parameters:
+      pos_x: "4 * ($block_size+$padding) + $padding"
+      pos_y: "1 * ($block_size+$padding) + $padding"
+      width: "$block_size"
+      height: "$block_size"
+      color: "goldenrod"
+
+  - name: Alpha Teal Block
+    type: block
+    parameters:
+      pos_x: "1 * ($block_size+$padding) + $padding"
+      pos_y: "2 * ($block_size+$padding) + $padding"
+      width: "$block_size"
+      height: "$block_size"
+      color: "teal"
+      alpha: "0.5+0.5*sin($time)"
+
+  - name: Alpha Thistle Block
+    type: block
+    parameters:
+      pos_x: "2 * ($block_size+$padding) + $padding"
+      pos_y: "2 * ($block_size+$padding) + $padding"
+      width: "$block_size"
+      height: "$block_size"
+      color: "thistle"
+      alpha: "0.5+0.5*sin($time+3.14)"
+
+  - name: Alpha Indigo Block
+    type: block
+    parameters:
+      pos_x: "3 * ($block_size+$padding) + $padding"
+      pos_y: "2 * ($block_size+$padding) + $padding"
+      width: "$block_size"
+      height: "$block_size"
+      color: "indigo"
+      alpha: "0.5+0.5*sin(2.0*$time)"
+
+  - name: Alpha Goldenrod Block
+    type: block
+    parameters:
+      pos_x: "4 * ($block_size+$padding) + $padding"
+      pos_y: "2 * ($block_size+$padding) + $padding"
+      width: "$block_size"
+      height: "$block_size"
+      color: "goldenrod"
+      alpha: "0.5+0.5*sin(4.0*$time)"
+
