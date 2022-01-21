@@ -1,0 +1,7 @@
+# id;file;max instances;drop mode;flags (loop);
+PAGE_1_ACTIVATED;page_1_activated;2;OLDEST;NONE;
+
+
+# to rebuild run
+# `omt-soundbank build --input multi_page.soundbank --output multi_page.omsb --use-version 3`
+# from the `omt` crate

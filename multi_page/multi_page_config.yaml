@@ -1,5 +1,9 @@
 default_page: 0
 elements:
+  - name: Soundbank
+    type: soundbank
+    parameters:
+      soundbank_file: "multi_page.omsb"
   - name: Main Stripe Top
     type: block
     parameters:
@@ -71,7 +75,12 @@ pages:
         color: "0xffffffff"
 
   - name: Page 1
+    parameters:
+      sound_on_show: PAGE_1_ACTIVATED
     elements:
+#    - name: Sound
+#      type: sound
+#      id: PAGE_1_ACTIVATED
     - name: Page 1 Stripe
       type: block
       parameters:
