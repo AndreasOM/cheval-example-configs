@@ -1,0 +1,16 @@
+variable_defaults:
+  image_size: 128
+elements:
+  - name: Image Horizontal
+    type: image
+    parameters:
+      pos_x: "( 1.5 + 1 * sin( 1.1 * $time ) ) * $image_size"
+      pos_y: 100
+      filename: ../data/images/alpha_gradient_horizontal.png
+
+  - name: Image Vertical
+    type: image
+    parameters:
+      pos_x: 100
+      pos_y: "( 1.5 + 1 * sin( 1.1 * $time ) ) * $image_size"
+      filename: ../data/images/alpha_gradient_vertical.png
