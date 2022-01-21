@@ -10,7 +10,9 @@ elements:
       pos_y: "0 * ($block_size+$padding) + $padding + 0.5 * $block_size"
       width: "1920"
       height: "$block_size"
-      color: "gray"
+      color: "0xff808080"
+#      color: "#808080ff"
+#      color: "gray"
 
   - name: Gray Stripe
     type: block
