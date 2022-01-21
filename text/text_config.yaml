@@ -12,4 +12,5 @@ elements:
       bounding_box_width: 1880
       text: "\"Rust Streamers Forever!\""
       font: ../data/fonts/FiraCode-Medium.ttf
-      color: "0xffffffff"
+      color: "pink"
+#      color: "0xffffffff"
