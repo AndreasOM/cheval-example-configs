@@ -1,0 +1,142 @@
+variable_defaults:
+  block_size: 128
+  padding: 16
+
+elements:
+  - name: Gray Stripe 100%
+    type: block
+    parameters:
+      pos_x: "0"
+      pos_y: "0 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      width: "1920"
+      height: "$block_size"
+      color: "0xff808080"
+
+  - name: Gray Stripe 80%
+    type: block
+    parameters:
+      pos_x: "0"
+      pos_y: "1 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      width: "1920"
+      height: "$block_size"
+      color: "0xff808080"
+      alpha: 0.8
+
+  - name: Gray Stripe 60%
+    type: block
+    parameters:
+      pos_x: "0"
+      pos_y: "2 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      width: "1920"
+      height: "$block_size"
+      color: "0xff808080"
+      alpha: 0.6
+
+  - name: Gray Stripe 40%
+    type: block
+    parameters:
+      pos_x: "0"
+      pos_y: "3 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      width: "1920"
+      height: "$block_size"
+      color: "0xff808080"
+      alpha: 0.4
+
+  - name: Gray Stripe 20%
+    type: block
+    parameters:
+      pos_x: "0"
+      pos_y: "4 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      width: "1920"
+      height: "$block_size"
+      color: "0xff808080"
+      alpha: 0.2
+
+  - name: Gray Stripe 00%
+    type: block
+    parameters:
+      pos_x: "0"
+      pos_y: "5 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      width: "1920"
+      height: "$block_size"
+      color: "0xff808080"
+      alpha: 0.0
+
+  - name: Red Stripe 100%
+    type: block
+    parameters:
+      pos_x: "0 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      pos_y: "0"
+      width: "$block_size"
+      height: "1080"
+      color: "0xffff0000"
+
+  - name: Red Stripe 80%
+    type: block
+    parameters:
+      pos_x: "1 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      pos_y: "0"
+      width: "$block_size"
+      height: "1080"
+      color: "0xffff0000"
+      alpha: 0.8
+
+  - name: Red Stripe 60%
+    type: block
+    parameters:
+      pos_x: "2 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      pos_y: "0"
+      width: "$block_size"
+      height: "1080"
+      color: "0xffff0000"
+      alpha: 0.6
+
+  - name: Red Stripe 40%
+    type: block
+    parameters:
+      pos_x: "3 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      pos_y: "0"
+      width: "$block_size"
+      height: "1080"
+      color: "0xffff0000"
+      alpha: 0.4
+
+  - name: Red Stripe 20%
+    type: block
+    parameters:
+      pos_x: "4 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      pos_y: "0"
+      width: "$block_size"
+      height: "1080"
+      color: "0xffff0000"
+      alpha: 0.2
+
+  - name: Red Stripe 00%
+    type: block
+    parameters:
+      pos_x: "5 * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      pos_y: "0"
+      width: "$block_size"
+      height: "1080"
+      color: "0xffff0000"
+      alpha: 0.0
+
+  - name: Blue Stripe 50%
+    type: block
+    parameters:
+      pos_x: "0"
+      pos_y: "( 2.5 + 3 * sin($time) ) * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      width: "1920"
+      height: "$block_size"
+      color: "blue"
+      alpha: 0.5
+
+  - name: Green Stripe 50%
+    type: block
+    parameters:
+      pos_x: "( 5.5 + 6 * sin( 1.1 * $time ) ) * ($block_size+$padding) + $padding + 0.5 * $block_size"
+      pos_y: "0"
+      width: "$block_size"
+      height: "1080"
+      color: "green"
+      alpha: 0.5
