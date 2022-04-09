@@ -1,0 +1,3 @@
+- [x] Buy food
+- [ ] Eat food
+- [ ] Clean dishes
